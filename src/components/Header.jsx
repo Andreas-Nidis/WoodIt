@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import React from "react";
 
-const Header= (props) => {
+const Header= ({ isFixed }) => {
     return (
-        <Nav>
+        <Nav isFixed={isFixed}>
             <Logo>
                 <img src="/images/main-logo.jpg" alt="" />
             </Logo>
@@ -23,7 +24,14 @@ const Header= (props) => {
 }
 
 const Nav = styled.nav`
-    position: fixed;
+    ${({ isFixed }) => isFixed ? `
+        position: fixed;
+        top: 0;
+        ` : `
+        position: relative;
+        margin-top: 0px;
+    `}
+    
     left: 0;
     right: 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -31,6 +39,7 @@ const Nav = styled.nav`
     align-items: center;
     justify-content: space-around;
     letter-spacing: 10px;
+    height: 80px;
     z-index: 3;
 `;
 

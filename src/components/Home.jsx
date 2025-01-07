@@ -1,13 +1,37 @@
 import styled from "styled-components";
 import Header from "./Header";
+import { useState, useEffect } from 'react';
 
 const Home = (props) => {
+    const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 400) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <Container>
             <Title>
                 <h1>WoodIt</h1>
             </Title>
-            <Header />
+            <Header isFixed={isFixed}/>
+            <Main>
+                <div>
+                    <img src="/images/main-image-1.jpg" alt="" />
+                    <p>
+                        Hello.
+                    </p>
+                </div>
+            </Main>
         </Container>
     )
 };
@@ -48,6 +72,11 @@ const Title = styled.div`
         opacity: 0.98;
         z-index: -1;
     }
+`;
+
+const Main =styled.div`
+    position: relative;
+    top: 80px;
 `;
 
 export default Home;
