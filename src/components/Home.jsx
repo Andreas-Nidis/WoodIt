@@ -76,7 +76,6 @@ const Title = styled.div`
 
 const Main =styled.div`
     position: relative;
-    top: 80px;
 `;
 
 export default Home;

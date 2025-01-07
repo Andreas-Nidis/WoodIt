@@ -27,9 +27,11 @@ const Nav = styled.nav`
     ${({ isFixed }) => isFixed ? `
         position: fixed;
         top: 0;
+        background-color: #fff;
         ` : `
         position: relative;
         margin-top: 0px;
+        
     `}
     
     left: 0;
