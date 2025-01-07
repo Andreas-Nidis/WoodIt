@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Header from "./Header";
 
 const Home = (props) => {
     return (
@@ -6,6 +7,7 @@ const Home = (props) => {
             <Title>
                 <h1>WoodIt</h1>
             </Title>
+            <Header />
         </Container>
     )
 };
@@ -20,7 +22,7 @@ const Container = styled.main`
 
 const Title = styled.div`
     position: relative;
-    color: #eeeeee;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     top: 0;
