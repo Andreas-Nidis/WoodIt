@@ -56,7 +56,8 @@ const NavMenu = styled.div`
     a {
         display: flex;
         align-items: center;
-        padding: 0 12px;
+        margin: 0 12px;
+        cursor: pointer;
 
         span {
             font-size: 16px;
