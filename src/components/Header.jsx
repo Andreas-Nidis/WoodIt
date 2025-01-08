@@ -26,12 +26,11 @@ const Header= ({ isFixed }) => {
 const Nav = styled.nav`
     ${({ isFixed }) => isFixed ? `
         position: fixed;
-        top: 0;
+        top: 0px;
         background-color: #fff;
         ` : `
         position: relative;
         margin-top: 0px;
-        
     `}
     
     left: 0;
