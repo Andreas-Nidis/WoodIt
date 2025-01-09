@@ -4,7 +4,10 @@ import Header from "./Header";
 const About = (props) => {
     return (
         <>
-            <Header />
+            <HeaderContainer>
+                <Header />
+            </HeaderContainer>
+            
             <Container>
                 <Portrait>
                     <img src="/images/portrait-image.jpeg" alt="Portrait of Pablo" />
@@ -23,9 +26,15 @@ const About = (props) => {
         </>
     )
 }
+const HeaderContainer = styled.div`
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+`;
 
 const Container = styled.div`
     position: relative;
+    top: 70px;
     padding: 0;
     margin: 0;
     width: 100%;
