@@ -26,6 +26,7 @@ const About = (props) => {
         </>
     )
 }
+
 const HeaderContainer = styled.div`
     position: fixed;
     width: 100%;
@@ -34,7 +35,7 @@ const HeaderContainer = styled.div`
 
 const Container = styled.div`
     position: relative;
-    top: 70px;
+    top: 80px;
     padding: 0;
     margin: 0;
     width: 100%;

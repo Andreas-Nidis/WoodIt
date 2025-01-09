@@ -100,7 +100,7 @@ const Title = styled.div`
     }
 
     &:after {
-        background: url('/images/main-background-1.jpg') center center / cover no-repeat fixed;
+        background: url('/videos/7KM2.gif') center center / cover no-repeat fixed;
         content: '';
         position: absolute;
         inset: 0px;
