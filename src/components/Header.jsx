@@ -9,13 +9,13 @@ const Header= ({ isFixed }) => {
             </Logo>
 
             <NavMenu>
-                <a>
+                <a href="/home">
                     <span>Home</span>
                 </a>
-                <a>
+                <a href="/about">
                     <span>About</span>
                 </a>
-                <a>
+                <a href="/request">
                     <span>Request</span>
                 </a>
             </NavMenu>

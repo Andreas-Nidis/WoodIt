@@ -57,7 +57,7 @@ const Home = (props) => {
                     <img id="img3" src="/images/main-image-3.jpg" alt="" />
                     <div>
                         <p className="title">
-                            Why Choose WoodIt
+                            Why Choose WoodIt?
                         </p>
                         <p>
                             When you choose WoodIt, you're choosing craftsmanship that values sustainability and individuality. <br/><br/>
@@ -164,6 +164,15 @@ const Wrap = styled.div`
             background-color: rgba(0, 0, 0, 0);
             margin: 14px 0;
             width: 100%;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 22px;
         }
     }
 `;
