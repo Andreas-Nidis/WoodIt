@@ -27,30 +27,33 @@ const Home = (props) => {
             <Header isFixed={isFixed}/>
 
             <Main isFixed={isFixed}>
-                <div>
+                <Wrap>
                     <img id="img1" src="/images/main-image-1.jpg" alt="" />
                     <div>
+                        <p className="title">
+                            Title 1 <br/>
+                        </p>
                         <p>
-                            Hello.
+                            Main Body 1 but it is not separating itself.
                         </p>
                     </div>
-                </div>
-                <div>
+                </Wrap>
+                <Wrap>
                     <div>
                         <p>
                             Hello.
                         </p>
                     </div>
-                    <img id="img1" src="/images/main-image-2.jpg" alt="" />
-                </div>
-                <div>
-                    <img id="img1" src="/images/main-image-3.jpg" alt="" />
+                    <img id="img2" src="/images/main-image-2.jpg" alt="" />
+                </Wrap>
+                <Wrap>
+                    <img id="img3" src="/images/main-image-3.jpg" alt="" />
                     <div>
                         <p>
                             Hello.
                         </p>
                     </div>
-                </div>
+                </Wrap>
             </Main>
         </Container>
     )
@@ -101,16 +104,20 @@ const Main =styled.div`
         ` : `
         margin-top: 0px;
     `}
+`;
+
+const Wrap = styled.div`
+    padding: 0;
+    margin: 0;
+    display: flex;
 
     div {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: auto;
+        background-color: rgba(152, 152, 152, 0.05);
+        width: 50%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
 
     img {
@@ -119,10 +126,12 @@ const Main =styled.div`
         border: 1px solid rgba(152, 152, 152, 0.7);
     }
 
-    p {
-        padding: 0;
+    .title {
         margin: 0;
+        padding: 0;
+        font-size: 24px;
     }
+    
 `;
 
 export default Home;
