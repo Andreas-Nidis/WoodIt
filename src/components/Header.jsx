@@ -54,6 +54,7 @@ const Logo = styled.a`
         display: block;
         width: 100%;
     }
+
 `;
 
 const NavMenu = styled.div`

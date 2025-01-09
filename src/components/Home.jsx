@@ -31,17 +31,24 @@ const Home = (props) => {
                     <img id="img1" src="/images/main-image-1.jpg" alt="" />
                     <div>
                         <p className="title">
-                            Title 1 <br/>
+                            The Art of Wood Carving
                         </p>
                         <p>
-                            Main Body 1 but it is not separating itself.
+                            Every piece of wood tells a story, and at WoodIt, we transform these stories into timeless works of art. <br/><br/>
+                            From intricate designs to bold statements, our carvings celebrate the beauty and character of nature's finest material. <br/><br/>
+                            Each cut, curve, and detail is a testament to the artistry and precision that defines wood carving.
                         </p>
                     </div>
                 </Wrap>
                 <Wrap>
                     <div>
+                        <p className="title">
+                            Our Process
+                        </p>
                         <p>
-                            Hello.
+                            At WoodIt, every project begins with <b>YOU</b>. <br/><br/> 
+                            Share your ideas, and together we'll shape them into a custom design that fits your vision. <br/><br/> 
+                            Using traditional tools and modern techniques, we bring your concepts to life, honoring the integrity of the wood and ensuring every carving is as functional as it is beautiful.
                         </p>
                     </div>
                     <img id="img2" src="/images/main-image-2.jpg" alt="" />
@@ -49,8 +56,13 @@ const Home = (props) => {
                 <Wrap>
                     <img id="img3" src="/images/main-image-3.jpg" alt="" />
                     <div>
+                        <p className="title">
+                            Why Choose WoodIt
+                        </p>
                         <p>
-                            Hello.
+                            When you choose WoodIt, you're choosing craftsmanship that values sustainability and individuality. <br/><br/>
+                            We source high-quality, responsibly harvested wood and turn it into one-of-a-kind creations that stand the test of time. <br/><br/>
+                            Whether it's a personalized gift, a functional piece, or a decorative masterpiece, every project is a labor of love.
                         </p>
                     </div>
                 </Wrap>
@@ -104,6 +116,8 @@ const Main =styled.div`
         ` : `
         margin-top: 0px;
     `}
+
+    
 `;
 
 const Wrap = styled.div`
@@ -112,7 +126,7 @@ const Wrap = styled.div`
     display: flex;
 
     div {
-        background-color: rgba(152, 152, 152, 0.05);
+        background-color: rgba(152, 152, 152, 0.07);
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -126,12 +140,32 @@ const Wrap = styled.div`
         border: 1px solid rgba(152, 152, 152, 0.7);
     }
 
+    p {
+        padding: 0 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+
     .title {
         margin: 0;
         padding: 0;
-        font-size: 24px;
+        font-size: 28px;
+        text-decoration: underline;
     }
     
+    @media (max-width: 768px) {
+        background-color: rgba(152, 152, 152, 0.07);
+
+        img {
+            display: none;
+        }
+
+        div {
+            background-color: rgba(0, 0, 0, 0);
+            margin: 14px 0;
+            width: 100%;
+        }
+    }
 `;
 
 export default Home;
