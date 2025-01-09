@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Header from "./Header";
 
-const About = (props) => {
+const Request = (props) => {
     return (
         <>
             <Header />
@@ -10,4 +10,4 @@ const About = (props) => {
     )
 }
 
-export default About;
+export default Request;
