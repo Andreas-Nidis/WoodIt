@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Header from "./Header";
 import { useState, useEffect } from 'react';
+import Footer from "./Footer";
 
 const Home = (props) => {
     const [isFixed, setIsFixed] = useState(false);
@@ -67,6 +68,7 @@ const Home = (props) => {
                     </div>
                 </Wrap>
             </Main>
+            <Footer />
         </Container>
     )
 };

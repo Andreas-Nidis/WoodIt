@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import React from "react";
 import { useState } from "react";
+import Footer from "./Footer";
 
 const Request = (props) => {
     const [name, setName] = useState('');
@@ -34,7 +35,7 @@ const Request = (props) => {
             setStatus('success');
         } catch (error) {
             setStatus('error');
-            
+
             setTimeout(() => {
                 setStatus('');
                 setName('');
@@ -84,6 +85,9 @@ const Request = (props) => {
                 </RightColumn>
                 <SubmitButton type="submit">Submit</SubmitButton>
             </Form>
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     )
 }
@@ -181,6 +185,10 @@ const Message = styled.div`
     font-size: 24px;
     font-weight: bold;
     color: #333;
+`;
+
+const FooterContainer = styled.div`
+    margin-top: 150px;
 `;
 
 export default Request;

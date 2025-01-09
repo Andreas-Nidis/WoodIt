@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const About = (props) => {
     return (
@@ -23,6 +24,9 @@ const About = (props) => {
                     </p>
                 </Text>
             </Container>
+            <FooterContainer>
+                <Footer />
+            </FooterContainer>
         </>
     )
 }
@@ -86,6 +90,10 @@ const Text = styled.div`
         width: 90%;
         align-items: justify;
     }
+`;
+
+const FooterContainer = styled.div`
+    margin-top: 150px;
 `;
 
 export default About;
