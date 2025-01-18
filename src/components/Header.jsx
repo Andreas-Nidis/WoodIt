@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header= ({ isFixed }) => {
     return (
@@ -9,15 +10,15 @@ const Header= ({ isFixed }) => {
             </Logo>
 
             <NavMenu>
-                <a href="/home">
+                <Link to="/home">
                     <span>Home</span>
-                </a>
-                <a href="/about">
+                </Link>
+                <Link to="/about">
                     <span>About</span>
-                </a>
-                <a href="/request">
+                </Link>
+                <Link to="/request">
                     <span>Request</span>
-                </a>
+                </Link>
             </NavMenu>
         </Nav>
     )
