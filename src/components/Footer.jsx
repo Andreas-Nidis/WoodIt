@@ -1,19 +1,20 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Footer = (props) => {
     return (
         <Container>
             <SiteLinks>
                 <h4>SiteLinks</h4>
-                <a href="/home">
+                <Link to="/home">
                     <span>Home</span>
-                </a>
-                <a href="/about">
+                </Link>
+                <Link to="/about">
                     <span>About</span>
-                </a>
-                <a href="/request">
+                </Link>
+                <Link to="/request">
                     <span>Request</span>
-                </a>
+                </Link>
             </SiteLinks>
             <Contact>
                 <h4>Contact</h4>
