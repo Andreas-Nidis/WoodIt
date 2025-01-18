@@ -50,7 +50,7 @@ const Request = (props) => {
     }
 
     if (status === 'error') {
-        return <Message>Error: Oops! Something went wrong. Please try again.</Message>;
+        return <Message>Error: Oops! This feature hasn't been implemented yet! I didn't want to leave my email open to scammer bots. Next time!</Message>;
     }
 
     return (
